@@ -103,7 +103,7 @@ will change the version message to
     MyProg version - 0.1.0
 
 Finally, a word on delimiters. By default Horse Whisperer has no delimiting symbols and chaining commands
-is done simply by following up one command with another. There are certain cases where this behaviour is not optimal, so it is posible to define delimitors with the *SetDelimters* function. Note that it is not advised to use a dash as
+is done simply by following up one command with another. There are certain cases where this behaviour is not optimal, so it is possible to define delimiters with the *SetDelimiters* function. Note that it is not advised to use a dash as
 a delimeter; dashes are used to identify flags.
 
     // void SetDelimiters(std::vector<std::string> delimiters)
@@ -326,8 +326,8 @@ The possible return values are listed below.
     ParseResult::ERROR;         // failed to parse (e.g. missing argument)
     ParseResult::INVALID_FLAG;  // invalid flag (e.g. string instead of an integer)
 
-When parsing a given flag value, the releavant flag validation callback will be executed and a `flag_validation_error` may be thrown.
-Once the parsing operation is complete, the action validation callbacks will be executed to validate the action argumetns; an `action_validation_error` may be thrown.
+When parsing a given flag value, the relevant flag validation callback will be executed and a `flag_validation_error` may be thrown.
+Once the parsing operation is complete, the action validation callbacks will be executed to validate the action arguments; an `action_validation_error` may be thrown.
 
 ### Displaying the help message
 
